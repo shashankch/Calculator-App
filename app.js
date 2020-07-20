@@ -23,7 +23,7 @@ for (var i = 0; i < key.length; i++) {
     } else if (code == "=") {
       b = parseFloat(screen.textContent.trim());
       var res = eval(a + " " + op + " " + b);
-      if (res) {
+      if (res != null) {
         screen.textContent = res;
         a = res;
         b = null;
